@@ -1,0 +1,233 @@
+{
+  "metadata": {
+    "pcap_file": "AUDIO_tor_spotify.pcap",
+    "analysis_timestamp": "2026-01-15T01:44:53.124023",
+    "tool": "NetScapeX v1.0",
+    "engine": "CYBROSKIS"
+  },
+  "summary": {
+    "total_packets": 35494,
+    "total_flows": 4,
+    "protocol_distribution": {
+      "TCP": 35493,
+      "UNKNOWN": 1
+    },
+    "high_risk_flows": 0,
+    "critical_threats": {
+      "None Detected": 4
+    }
+  },
+  "flows": [
+    {
+      "flow_id": "FLOW-00001",
+      "src_ip": "10.0.2.15",
+      "dst_ip": "195.154.82.180",
+      "protocol": "TCP",
+      "src_port": 60031,
+      "dst_port": 443,
+      "packet_count": 13,
+      "total_bytes": 3447,
+      "duration": 311.718,
+      "features": {
+        "packet_count": 13,
+        "total_bytes": 3447,
+        "duration": 311.7180199623108,
+        "packets_per_second": 0.041704358322216355,
+        "bytes_per_second": 11.05807101051383,
+        "mean_packet_size": 265.15384615384613,
+        "std_packet_size": 262.3573154054325,
+        "min_packet_size": 54.0,
+        "max_packet_size": 597.0,
+        "mean_iat": 25.976501663525898,
+        "std_iat": 82.44491700507692,
+        "min_iat": 5.4836273193359375e-05,
+        "max_iat": 299.25926399230957,
+        "burst_count": 7,
+        "is_dns": false,
+        "protocol": "TCP",
+        "src_port": 60031,
+        "dst_port": 443
+      },
+      "risk_assessment": {
+        "risk_score": 27.6,
+        "risk_level": "Medium",
+        "confidence": "Low",
+        "threats": [
+          "None Detected"
+        ],
+        "detections": {
+          "ml_probability": 0.62,
+          "ml_classification": "Moderate Risk",
+          "beaconing_score": 0.3,
+          "beaconing_detected": false,
+          "beaconing_description": "Outbound dominant",
+          "dns_tunnel_score": 0.0,
+          "dns_tunnel_detected": false,
+          "dns_tunnel_description": "Not a DNS flow",
+          "protocol_anomaly_score": 0.0,
+          "protocol_anomalies": []
+        }
+      }
+    },
+    {
+      "flow_id": "FLOW-00002",
+      "src_ip": "10.0.2.15",
+      "dst_ip": "213.239.216.222",
+      "protocol": "TCP",
+      "src_port": 37628,
+      "dst_port": 443,
+      "packet_count": 13,
+      "total_bytes": 3557,
+      "duration": 501.174,
+      "features": {
+        "packet_count": 13,
+        "total_bytes": 3557,
+        "duration": 501.173868894577,
+        "packets_per_second": 0.025939101790509705,
+        "bytes_per_second": 7.097337312987925,
+        "mean_packet_size": 273.61538461538464,
+        "std_packet_size": 273.0600211454049,
+        "min_packet_size": 54.0,
+        "max_packet_size": 619.0,
+        "mean_iat": 41.76448907454809,
+        "std_iat": 93.819952936474,
+        "min_iat": 4.291534423828125e-05,
+        "max_iat": 299.85340905189514,
+        "burst_count": 7,
+        "is_dns": false,
+        "protocol": "TCP",
+        "src_port": 37628,
+        "dst_port": 443
+      },
+      "risk_assessment": {
+        "risk_score": 27.6,
+        "risk_level": "Medium",
+        "confidence": "Low",
+        "threats": [
+          "None Detected"
+        ],
+        "detections": {
+          "ml_probability": 0.62,
+          "ml_classification": "Moderate Risk",
+          "beaconing_score": 0.3,
+          "beaconing_detected": false,
+          "beaconing_description": "Outbound dominant",
+          "dns_tunnel_score": 0.0,
+          "dns_tunnel_detected": false,
+          "dns_tunnel_description": "Not a DNS flow",
+          "protocol_anomaly_score": 0.0,
+          "protocol_anomalies": []
+        }
+      }
+    },
+    {
+      "flow_id": "FLOW-00003",
+      "src_ip": "10.0.2.15",
+      "dst_ip": "37.97.149.8",
+      "protocol": "TCP",
+      "src_port": 50628,
+      "dst_port": 443,
+      "packet_count": 50,
+      "total_bytes": 17959,
+      "duration": 1209.24,
+      "features": {
+        "packet_count": 50,
+        "total_bytes": 17959,
+        "duration": 1209.2395160198212,
+        "packets_per_second": 0.041348301422181134,
+        "bytes_per_second": 14.85148290481902,
+        "mean_packet_size": 359.18,
+        "std_packet_size": 287.30072676552703,
+        "min_packet_size": 54.0,
+        "max_packet_size": 1111.0,
+        "mean_iat": 24.678357469792267,
+        "std_iat": 81.10579105205454,
+        "min_iat": 3.910064697265625e-05,
+        "max_iat": 299.69914078712463,
+        "burst_count": 28,
+        "is_dns": false,
+        "protocol": "TCP",
+        "src_port": 50628,
+        "dst_port": 443
+      },
+      "risk_assessment": {
+        "risk_score": 27.6,
+        "risk_level": "Medium",
+        "confidence": "Low",
+        "threats": [
+          "None Detected"
+        ],
+        "detections": {
+          "ml_probability": 0.62,
+          "ml_classification": "Moderate Risk",
+          "beaconing_score": 0.3,
+          "beaconing_detected": false,
+          "beaconing_description": "Outbound dominant",
+          "dns_tunnel_score": 0.0,
+          "dns_tunnel_detected": false,
+          "dns_tunnel_description": "Not a DNS flow",
+          "protocol_anomaly_score": 0.0,
+          "protocol_anomalies": []
+        }
+      }
+    },
+    {
+      "flow_id": "FLOW-00000",
+      "src_ip": "10.0.2.15",
+      "dst_ip": "195.154.107.23",
+      "protocol": "TCP",
+      "src_port": 37652,
+      "dst_port": 443,
+      "packet_count": 35417,
+      "total_bytes": 33809386,
+      "duration": 1590.846,
+      "features": {
+        "packet_count": 35417,
+        "total_bytes": 33809386,
+        "duration": 1590.8457658290863,
+        "packets_per_second": 22.263000449664617,
+        "bytes_per_second": 21252.459997201473,
+        "mean_packet_size": 954.608973092018,
+        "std_packet_size": 611.8616831030921,
+        "min_packet_size": 54.0,
+        "max_packet_size": 1514.0,
+        "mean_iat": 0.04491884362517185,
+        "std_iat": 0.6001748895509984,
+        "min_iat": 0.0,
+        "max_iat": 21.80259895324707,
+        "burst_count": 32752,
+        "is_dns": false,
+        "protocol": "TCP",
+        "src_port": 37652,
+        "dst_port": 443
+      },
+      "risk_assessment": {
+        "risk_score": 24.0,
+        "risk_level": "Low",
+        "confidence": "Low",
+        "threats": [
+          "None Detected"
+        ],
+        "detections": {
+          "ml_probability": 0.5,
+          "ml_classification": "Normal Traffic",
+          "beaconing_score": 0.3,
+          "beaconing_detected": false,
+          "beaconing_description": "Outbound dominant",
+          "dns_tunnel_score": 0.0,
+          "dns_tunnel_detected": false,
+          "dns_tunnel_description": "Not a DNS flow",
+          "protocol_anomaly_score": 0.0,
+          "protocol_anomalies": []
+        }
+      }
+    }
+  ],
+  "top_talkers": [
+    {
+      "ip": "10.0.2.15",
+      "packet_count": 35493
+    }
+  ],
+  "timeline": []
+}

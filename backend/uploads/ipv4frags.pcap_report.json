@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "pcap_file": "ipv4frags.pcap",
+    "analysis_timestamp": "2026-01-15T01:40:23.795784",
+    "tool": "NetScapeX v1.0",
+    "engine": "CYBROSKIS"
+  },
+  "summary": {
+    "total_packets": 3,
+    "total_flows": 2,
+    "protocol_distribution": {
+      "ICMP": 2,
+      "1": 1
+    },
+    "high_risk_flows": 0,
+    "critical_threats": {
+      "None Detected": 2
+    }
+  },
+  "flows": [
+    {
+      "flow_id": "FLOW-00001",
+      "src_ip": "2.1.1.2",
+      "dst_ip": "2.1.1.1",
+      "protocol": 1,
+      "src_port": null,
+      "dst_port": null,
+      "packet_count": 1,
+      "total_bytes": 466,
+      "duration": 0.0,
+      "features": {
+        "packet_count": 1,
+        "total_bytes": 466,
+        "duration": 0.0,
+        "packets_per_second": 0,
+        "bytes_per_second": 0,
+        "mean_packet_size": 466.0,
+        "std_packet_size": 0.0,
+        "min_packet_size": 466.0,
+        "max_packet_size": 466.0,
+        "mean_iat": 0,
+        "std_iat": 0,
+        "min_iat": 0,
+        "max_iat": 0,
+        "burst_count": 0,
+        "is_dns": false,
+        "protocol": 1,
+        "src_port": 0,
+        "dst_port": 0
+      },
+      "risk_assessment": {
+        "risk_score": 19.8,
+        "risk_level": "Low",
+        "confidence": "Low",
+        "threats": [
+          "None Detected"
+        ],
+        "detections": {
+          "ml_probability": 0.66,
+          "ml_classification": "Moderate Risk",
+          "beaconing_score": 0.0,
+          "beaconing_detected": false,
+          "beaconing_description": "Insufficient packets for beaconing analysis",
+          "dns_tunnel_score": 0.0,
+          "dns_tunnel_detected": false,
+          "dns_tunnel_description": "Not a DNS flow",
+          "protocol_anomaly_score": 0.0,
+          "protocol_anomalies": []
+        }
+      }
+    },
+    {
+      "flow_id": "FLOW-00000",
+      "src_ip": "2.1.1.2",
+      "dst_ip": "2.1.1.1",
+      "protocol": "ICMP",
+      "src_port": null,
+      "dst_port": null,
+      "packet_count": 2,
+      "total_bytes": 2452,
+      "duration": 0.001,
+      "features": {
+        "packet_count": 2,
+        "total_bytes": 2452,
+        "duration": 0.0005090236663818359,
+        "packets_per_second": 3929.0903981264637,
+        "bytes_per_second": 4817064.828103044,
+        "mean_packet_size": 1226.0,
+        "std_packet_size": 216.0,
+        "min_packet_size": 1010.0,
+        "max_packet_size": 1442.0,
+        "mean_iat": 0.0005090236663818359,
+        "std_iat": 0.0,
+        "min_iat": 0.0005090236663818359,
+        "max_iat": 0.0005090236663818359,
+        "burst_count": 1,
+        "is_dns": false,
+        "protocol": "ICMP",
+        "src_port": 0,
+        "dst_port": 0
+      },
+      "risk_assessment": {
+        "risk_score": 12.0,
+        "risk_level": "Low",
+        "confidence": "Low",
+        "threats": [
+          "None Detected"
+        ],
+        "detections": {
+          "ml_probability": 0.4,
+          "ml_classification": "Normal Traffic",
+          "beaconing_score": 0.0,
+          "beaconing_detected": false,
+          "beaconing_description": "Insufficient packets for beaconing analysis",
+          "dns_tunnel_score": 0.0,
+          "dns_tunnel_detected": false,
+          "dns_tunnel_description": "Not a DNS flow",
+          "protocol_anomaly_score": 0.0,
+          "protocol_anomalies": []
+        }
+      }
+    }
+  ],
+  "top_talkers": [
+    {
+      "ip": "2.1.1.2",
+      "packet_count": 3
+    }
+  ],
+  "timeline": []
+}

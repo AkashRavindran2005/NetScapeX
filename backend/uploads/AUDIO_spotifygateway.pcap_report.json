@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "pcap_file": "AUDIO_spotifygateway.pcap",
+    "analysis_timestamp": "2026-01-15T01:44:05.031708",
+    "tool": "NetScapeX v1.0",
+    "engine": "CYBROSKIS"
+  },
+  "summary": {
+    "total_packets": 35485,
+    "total_flows": 1,
+    "protocol_distribution": {
+      "TCP": 35463,
+      "UNKNOWN": 22
+    },
+    "high_risk_flows": 0,
+    "critical_threats": {
+      "None Detected": 1
+    }
+  },
+  "flows": [
+    {
+      "flow_id": "FLOW-00000",
+      "src_ip": "10.0.2.15",
+      "dst_ip": "82.161.239.177",
+      "protocol": "TCP",
+      "src_port": 57188,
+      "dst_port": 110,
+      "packet_count": 35463,
+      "total_bytes": 30713857,
+      "duration": 3361.448,
+      "features": {
+        "packet_count": 35463,
+        "total_bytes": 30713857,
+        "duration": 3361.447655916214,
+        "packets_per_second": 10.549918853439358,
+        "bytes_per_second": 9137.092153121292,
+        "mean_packet_size": 866.08174717311,
+        "std_packet_size": 641.7229299406222,
+        "min_packet_size": 54.0,
+        "max_packet_size": 1474.0,
+        "mean_iat": 0.0947901318570925,
+        "std_iat": 4.286594948645911,
+        "min_iat": 0.0,
+        "max_iat": 298.700688123703,
+        "burst_count": 32657,
+        "is_dns": false,
+        "protocol": "TCP",
+        "src_port": 57188,
+        "dst_port": 110
+      },
+      "risk_assessment": {
+        "risk_score": 24.0,
+        "risk_level": "Low",
+        "confidence": "Low",
+        "threats": [
+          "None Detected"
+        ],
+        "detections": {
+          "ml_probability": 0.5,
+          "ml_classification": "Normal Traffic",
+          "beaconing_score": 0.3,
+          "beaconing_detected": false,
+          "beaconing_description": "Outbound dominant",
+          "dns_tunnel_score": 0.0,
+          "dns_tunnel_detected": false,
+          "dns_tunnel_description": "Not a DNS flow",
+          "protocol_anomaly_score": 0.0,
+          "protocol_anomalies": []
+        }
+      }
+    }
+  ],
+  "top_talkers": [
+    {
+      "ip": "10.0.2.15",
+      "packet_count": 35463
+    }
+  ],
+  "timeline": []
+}
