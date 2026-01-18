@@ -29,54 +29,6 @@ NetScapeX is a full-stack, ML-augmented network traffic analysis platform that i
 
 ***
 
-## Project Structure
-
-```text
-NetScapeX/
-├── backend/
-│   ├── api.py
-│   ├── parser.py
-│   ├── flow.py
-│   ├── features.py
-│   ├── scorer.py
-│   ├── report.py
-│   ├── detectors/
-│   │   ├── ml_classifier.py
-│   │   ├── beaconing.py
-│   │   ├── dns_tunnel.py
-│   │   └── protocol_anomaly.py
-│   └── uploads/           # PCAPs + JSON reports
-└── frontend/
-    ├── index.html
-    ├── vite.config.js
-    ├── package.json
-    └── src/
-        ├── main.jsx
-        ├── App.jsx
-        ├── index.css
-        ├── pages/
-        │   ├── Landing.jsx
-        │   ├── Upload.jsx
-        │   ├── Dashboard.jsx
-        │   ├── Results.jsx
-        │   └── FlowDetail.jsx
-        ├── components/
-        │   ├── Navigation.jsx
-        │   ├── UploadCard.jsx
-        │   ├── FlowTable.jsx
-        │   ├── RiskMeter.jsx
-        │   ├── Charts.jsx
-        │   ├── FlowModal.jsx
-        │   ├── LoadingSpinner.jsx
-        │   └── StatsCard.jsx
-        └── utils/
-            ├── api.js
-            └── formatters.js
-```
-  
-
-***
-
 ## Backend Setup
 
 ### 1. Prerequisites
@@ -131,8 +83,6 @@ npm install
 npm install react-router-dom axios recharts framer-motion lucide-react react-dropzone
 npm install -D tailwindcss @tailwindcss/vite
 ```
-
-Tailwind is integrated via the new Vite plugin in `vite.config.js`, and `index.css` uses `@import "tailwindcss";`.   
 
 ### 3. Run Frontend
 
